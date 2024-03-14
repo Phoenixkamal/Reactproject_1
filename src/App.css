@@ -19,7 +19,6 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-
 .total-center{
     display: flex;
     justify-content: center;
@@ -77,7 +76,7 @@ body{
 
 @media screen and (max-width:810px) {
     .visible-hidden{
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -93,8 +92,12 @@ body{
     padding: 127px 120px;
     flex: 1 0 0px;
 }
-.section-1-content{
+.section-1-content .content-2{
     position: relative;
+}
+.section-1-content{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -107,12 +110,12 @@ body{
     width: 312px;
 }
 
-.section-1-content .content-1,
-.section-1-content .content-2{
-    /* max-width: 600px; */
-    box-sizing: border-box;
+.section-1-content .content-1{
+    max-width: 600px;
 }
-
+.section-1-content .content-2{
+    max-width: 650px;
+}
 .section-1-content .para{
     font-weight: 400;
     color: black;
@@ -138,9 +141,7 @@ body{
     cursor: pointer;
     font-family: sans-serif;
 }
-/* .section-1-content .content-2{
-    position: relative;
-} */
+
 .circle-1{
     position: absolute;
     overflow: visible;
@@ -196,3 +197,73 @@ body{
 }
 
 
+@media screen and (min-width: 810px) and (max-width: 1199px){
+    .content-1 .heading h1{
+        font-size: 40px;
+    } 
+    .section-1-content{
+        overflow-x: hidden;
+    }
+    .circle-1{
+        width: 69px;
+        height: 69px;
+        inset: 75px 41px auto auto;
+    }
+    .circle-2{
+        width: 41px;
+        inset: auto auto 75px 46px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-3{
+        width: 44px;
+        inset: 28px auto auto 103px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-4{
+        width: 56px;
+        inset: calc(81.3776% - 28px) 82px auto auto;
+        aspect-ratio: 1/1;
+    }
+    .section-1-content .content-2{
+        width: 86vw;
+        align-self: center;
+        aspect-ratio: 1/1;
+    }
+}
+@media screen and (max-width:810px) {
+    .content-1 .heading h1{
+        font-size: 34px;
+    } 
+    .section-1-content{
+        flex-direction: column
+    }
+    .section-1-content .content-1{
+        padding: 40px 120px;
+    }
+    .circle-1{
+        width: 68px;
+        inset: 71px 36px auto auto;
+        aspect-ratio: 1/1;
+    }
+    .circle-2{
+        width: 64px;
+        inset: auto auto 48px 35px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-3{
+        width: 44px;
+        inset: 36px auto auto 106px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-4{
+        width: 67px;
+        inset: auto 61px 35px auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-width:991) {
+    .section-1-content .content-1{
+        max-width:100%;
+    }
+}
