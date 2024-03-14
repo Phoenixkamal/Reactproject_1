@@ -1,13 +1,14 @@
 import './App.css';
-// import { Container,Row,Col } from 'react-bootstrap';'
 import Nav from './Nav';
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Section_1 from './Section_1';
+
+
 function App() {
   return (
-    <div className="App text-center">
-      <Nav></Nav>
+    <div className="App">
+      <Nav/>
+      <Section_1/>
     </div>
   );
 }

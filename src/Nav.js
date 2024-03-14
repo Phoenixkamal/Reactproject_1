@@ -18,10 +18,10 @@ const Nav = () => {
         </div>
         <div className="cus-btn">
           <button className="start-now-btn">Start now
-          <div className="arrow d-inline">
-            <FaArrowRight />
-          </div>
-</button>
+            <div className="arrow d-inline">
+              <FaArrowRight />
+            </div>
+          </button>
         </div>
       </div>
     </div>
