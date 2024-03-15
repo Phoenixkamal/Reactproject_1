@@ -1,7 +1,9 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body{
-    font-family: "DM Sans", sans-serif;
     overflow-x: hidden;
     
 }
@@ -34,7 +36,7 @@ body{
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    width: 230px;
+    width: 216px;
 }
 
 .nav-list li{
@@ -62,6 +64,7 @@ body{
     width: 100%;
     font-size: 16px;
     cursor: pointer;
+    height: 100%;
 }
 .start-now-btn:hover{
     transition: all 0.3s;
@@ -105,7 +108,6 @@ body{
     font-family: "DM Sans", sans-serif;
     font-size: var(--heading-font-size);
     font-weight:700;
-    letter-spacing: -2px;
     line-height: 1em;
     width: 312px;
 }
@@ -116,17 +118,25 @@ body{
 .section-1-content .content-2{
     max-width: 650px;
 }
-.section-1-content .para{
+.contents .para p{
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    color: black;
+    color: #333333;
     font-size: 18px;
     line-height: 1.5em;
 
 }
 
-.cus-box-shad{
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.start-now-btn-cus{
     box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
     padding: 12px 20px;
+    font-size: 18px
 
 }
 
@@ -146,7 +156,6 @@ body{
     position: absolute;
     overflow: visible;
     width: 199px;
-    height: var(auto, 199px);
     left: calc(90.1667% - 99.5px);
     top: calc(25.945% - 99.5px);
     flex: 0 0 auto;
@@ -157,12 +166,9 @@ body{
 }
 .circle-2{
     position: absolute;
-    overflow: visible;
     width: 140px;
-    height: var(auto, 140px);
     left: calc(9.16667% - 70px);
     top: calc(77.1478% - 70px);
-    flex: 0 0 auto;
     aspect-ratio: 1 / 1;
     border-radius: 96px;
     box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
@@ -171,12 +177,9 @@ body{
 
 .circle-3{
     position: absolute;
-    overflow: visible;
     width: 44px;
-    height: var(auto, 44px);
     left: calc(24.3333% - 22px);
     top: calc(15.9794% - 22px);
-    flex: 0 0 auto;
     aspect-ratio: 1 / 1;
     border-radius: 96px;
     box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
@@ -184,12 +187,9 @@ body{
 }
 .circle-4{
     position: absolute;
-    overflow: visible;
     width: 117px;
-    height: var(auto, 117px);
     left: calc(76.8333% - 58.5px);
     top: calc(82.1306% - 58.5px);
-    flex: 0 0 auto;
     aspect-ratio: 1 / 1;
     border-radius: 96px;
     box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
@@ -225,7 +225,6 @@ body{
         aspect-ratio: 1/1;
     }
     .section-1-content .content-2{
-        width: 86vw;
         align-self: center;
         aspect-ratio: 1/1;
     }
@@ -235,7 +234,8 @@ body{
         font-size: 34px;
     } 
     .section-1-content{
-        flex-direction: column
+        flex-direction: column;
+        overflow-x: hidden;
     }
     .section-1-content .content-1{
         padding: 40px 120px;
@@ -265,5 +265,40 @@ body{
 @media screen and (max-width:991) {
     .section-1-content .content-1{
         max-width:100%;
+    }
+}
+.content-2{
+    animation-name: content-2-animation;
+    animation-duration: .7s;
+}
+
+/* Animation */
+
+@keyframes content-1-animation {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-22px);
+        
+    }
+    100%{
+         transform: translateY(1px); 
+    }
+}
+
+@keyframes  content-2-animation {
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+        
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateY(-5px);
     }
 }
