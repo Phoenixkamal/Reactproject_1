@@ -1,24 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import LaptopImg from './images/laptop-image.png'
+import DataContext from './context/DataContext';
 
-const Section_1 = () => {
-    const anime = {
-        animationName: "content-1-animation",
-        animationDuration: "1s"
-    }
+const Section_1 = () => { 
+    const {anime,anime_1,anime_2,anime_3,setanime_1,setanime_2,setanime_3} = useContext(DataContext)
+    
     const circle_anime ={
         animationName: "content-2-animation",
         animationDuration: ".7s"
     }
-
-    const [anime_1,setanime_1] = useState({})
-    const [anime_2,setanime_2] = useState({
-        visibility: "hidden"
-    })
-    const [anime_3,setanime_3] = useState({
-        visibility: "hidden"
-    })
     const [circle_1,setCircle_1] =useState({
         visibility: "hidden"
     })
@@ -31,6 +22,7 @@ const Section_1 = () => {
     const [circle_4,setCircle_4] =useState({
         visibility: "hidden"
     })
+
     useEffect(
         ()=>{
             setanime_1(anime)
