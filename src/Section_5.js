@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState} from 'react'
 import phone_img from './images/phone.svg'
 import ban_img from './images/ban-icon.svg'
 import check_box from './images/check-box.svg'
@@ -6,7 +6,10 @@ import DataContext from './context/DataContext'
 
 
 const Section_5 = () => {
-    const {section_6_anime,sec_6_fadeAnime,pad_anime} = useContext(DataContext)
+    const { sec_6_fadeAnime,section_6_anime ,pad_anime} = useContext(DataContext)
+    const [box1,setBox1] = useState({opacity:"0"})
+    const [box2,setBox2] = useState({opacity:"0"})
+    const [box3,setBox3] = useState({opacity:"0"})
     const [scrollAnime_1 , setScrollAnime_1] = useState({})
     const [scrollAnime_2 , setScrollAnime_2] = useState({})
     const [FadeAnime_1,setFadeAnime_1] = useState({
@@ -15,9 +18,6 @@ const Section_5 = () => {
     const [FadeAnime_2,setFadeAnime_2] = useState({
         opacity:"0"
     })
-    const [box1,setBox1] = useState({opacity:"0"})
-    const [box2,setBox2] = useState({opacity:"0"})
-    const [box3,setBox3] = useState({opacity:"0"})
 
     const [padAnime1,setPadAnime1] = useState({padding:"0px"})
     const [padAnime2,setPadAnime2] = useState({padding:"0px"})
@@ -25,7 +25,7 @@ const Section_5 = () => {
 
 
     function myScrollfn() {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 1590 ) {
             setTimeout(()=>{
                 setFadeAnime_1(sec_6_fadeAnime)
                 setScrollAnime_1(section_6_anime)
@@ -38,21 +38,22 @@ const Section_5 = () => {
             setTimeout(()=>{
                 setTimeout(()=>{
                     setBox1(sec_6_fadeAnime)
-                    setTimeout(()=>{setPadAnime1(pad_anime)},100)
+                    setTimeout(()=>{setPadAnime1(pad_anime)},0)
                 },100)
                 setTimeout(()=>{
                     setBox2(sec_6_fadeAnime)
-                    setTimeout(()=>{setPadAnime2(pad_anime)},100)
+                    setTimeout(()=>{setPadAnime2(pad_anime)},0)
                 },400)
                 setTimeout(()=>{
                     setBox3(sec_6_fadeAnime)
-                    setTimeout(()=>{setPadAnime3(pad_anime)},100)
+                    setTimeout(()=>{setPadAnime3(pad_anime)},0)
                 },800)
             },500)
         } 
         }
    
-        window.addEventListener('scroll', myScrollfn)
+    window.addEventListener('scroll', myScrollfn)
+    
   return (
     <div className='section-5'>
         <div className="sec-5-container">

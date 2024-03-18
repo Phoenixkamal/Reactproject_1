@@ -6,20 +6,10 @@ import DataContext from './context/DataContext';
 
 
 const Section_4 = () => {
-    const {anime_calender} = useContext(DataContext)
-    const [scrollAnime , setScrollAnime] = useState({})
-
-    function myScrollfn() {
-        if (window.scrollY > 290) {
-            setTimeout(()=>{setScrollAnime(anime_calender)},1000)
-        } 
-        }
-   
-        window.addEventListener('scroll', myScrollfn)
   return (
     <div className="section-3">
     <div className="sec-3-container">
-        <div className="sec-3-contents" style={scrollAnime}>
+        <div className="sec-3-contents">
         <div className="sec-3-content-2">
                 <div className="content-wrap">
                     <div className="content">
