@@ -1,8 +1,9 @@
 import React, { useContext, useState} from 'react'
-import phone_img from './images/phone.svg'
-import ban_img from './images/ban-icon.svg'
-import check_box from './images/check-box.svg'
-import DataContext from './context/DataContext'
+import phone_img from '../images/phone.svg'
+import ban_img from '../images/ban-icon.svg'
+import check_box from '../images/check-box.svg'
+import DataContext from '../context/DataContext'
+import './Section_5.css'
 
 
 const Section_5 = () => {

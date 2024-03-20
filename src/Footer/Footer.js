@@ -3,6 +3,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { PiTwitterLogoFill } from "react-icons/pi";
 import { FaBasketball } from "react-icons/fa6";
 import { FaOctopusDeploy } from "react-icons/fa";
+import './Footer.css'
 
 
 const Footer = () => {

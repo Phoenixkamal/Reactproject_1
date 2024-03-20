@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react'
-import calender_img from './images/calender-2.png'
+import calender_img from '../images/calender-2.png'
 import { FaArrowRight } from "react-icons/fa6";
-import DataContext from './context/DataContext';
-
+import './Section_4.css'
 
 
 const Section_4 = () => {

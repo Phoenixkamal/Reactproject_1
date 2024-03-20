@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Logoipsum_1 from './images/logoipsum_1.svg'
-import Logoipsum_2 from './images/logoipsum_2.svg'
-import Logoipsum_3 from './images/logoipsum_3.svg'
-import Logoipsum_4 from './images/logoipsum_4.svg'
-import Logoipsum_5 from './images/logoipsum_5.svg'
-import DataContext from './context/DataContext'
+import Logoipsum_1 from '../images/logoipsum_1.svg'
+import Logoipsum_2 from '../images/logoipsum_2.svg'
+import Logoipsum_3 from '../images/logoipsum_3.svg'
+import Logoipsum_4 from '../images/logoipsum_4.svg'
+import Logoipsum_5 from '../images/logoipsum_5.svg'
+import DataContext from '../context/DataContext'
+import './Section_2.css'
 
 const Section_2 = () => {
     const {anime,fadeAnime} = useContext(DataContext)

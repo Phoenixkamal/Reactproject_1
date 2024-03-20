@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { FaCheck } from "react-icons/fa";
-import DataContext from './context/DataContext';
+import DataContext from '../context/DataContext';
+import './Section_6.css'
 
 
 const Section_6 = () => {

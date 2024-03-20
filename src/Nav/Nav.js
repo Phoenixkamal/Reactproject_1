@@ -1,6 +1,7 @@
 import React from 'react'
-import logo from './images/logo.png'
+import logo from '../images/logo.png'
 import { FaArrowRight } from "react-icons/fa6";
+import './Nav.css'
 
 const Nav = () => {
   return (

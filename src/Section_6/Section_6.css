@@ -1,0 +1,316 @@
+/* Section 6 */
+
+
+.sec-6-contents{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 120px 50px;
+    background-color: rgb(255, 255, 255);
+}
+.sec-6-content-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-6-content-header .header-contents{
+    max-width: 536px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.sec-6-content-header .header-contents > *{
+    text-align: center;
+}
+
+.sec-6-heading h1{
+    font-size: 50px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+}
+
+.sec-6-brief{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.5em;
+    color: #000000;
+}
+
+.sec-6-content-body .mycard-deck{
+    width: 807px;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.mycard-deck .card-1{
+    width: 373px;
+    height: min-content;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+    align-self: center;
+}
+
+.card-1 .card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+.card-details .brief-1 .head h6{
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
+
+.card-details .brief-1 .brief p,
+.card-details .brief-2 .brief p,
+.card-details .child-1 .brief p,
+.card-details .child-2 .brief p
+{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    color: rgba(225, 225, 225, 0.7);
+    margin: 0;
+}
+
+.brief-3 .list-item,
+.child-3 .list-item{
+    margin: 0;
+}
+
+.card-details .brief-2 .price h4,
+.card-details .child-2 .price h4{
+    font-family: "DM Sans", sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-details .brief-2 .brief{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(225, 225, 225, 0.7);
+}
+.card-details .brief-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: min-content;
+    width: 287px;
+    gap: 10px;
+}
+.brief-3 .list-item{
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    height: min-content;
+}
+
+.brief-3 .list-item >*{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.list-item .item{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    flex: 0 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-2-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--token-7434257b-0490-4e05-8646-71d8417a414b, #101012);
+    opacity: 0.1;
+}
+
+.card-details .brief-4 .sec-6-card-btn,
+.card-details .brief-4 .sec-6-btn{
+    width: 100%;
+    border: none;
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px 0px;
+}
+
+.sec-6-card-btn .btn,
+.sec-6-card-btn .sec-6-btn
+{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    color:  rgba(255, 109, 15, 1);
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+}
+
+.card-base{
+    height: min-content;
+    padding: 5px;
+    border-radius: 35px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+
+.card-2 .card-details{
+    width: 374px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.card-details .child-1 .head h6{
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
+
+.card-details .child-1 .brief p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+    color: rgba(225, 225, 225, 0.7);
+}
+
+.card-details .child-2 .price h4{
+    font-family: "DM Sans", sans-serif;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.card-details .child-2 .brief{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(225, 225, 225, 0.7);
+}
+
+.child-3 .list-item{
+    list-style-type: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.child-3 .list-item >*{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.card-2 .card-details .child-1 .brief p{
+    font-family: "DM Sans", sans-serif;
+    color: #666572;
+}
+
+.card-2 .child-2 .brief p{
+    font-family: "DM Sans", sans-serif;
+    color: #666572;
+    opacity: 0.5;
+}
+
+.child-2 .price h4{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    color: #ff4d0c;
+}
+
+.child-1 .head h6{
+    color: #666572;
+}
+
+.child-3 .list-item .check-icon >*{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    fill: rgb(255, 65, 0);
+    flex-shrink: 0;
+}
+
+.child-4 .sec-6-card-btn{
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+    filter: none;
+    width: 100%;
+    opacity: 1;
+    border-radius: 26px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+}
+
+.child-4 .sec-6-card-btn .btn{
+    color: white;
+}
+.child-4  .sec-6-card-btn:hover{
+    transition: all 0.3s;
+    opacity: 0.7;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 20px 30px 0px;
+}
+
+.brief-4  .sec-6-card-btn:hover{
+    transition: all 0.3s;
+    opacity: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+}
+
+@media screen and (min-width:810px) and (max-width: 1199px){
+    .mycard-deck{
+        flex-direction: column;
+    }
+    .mycard-deck .card-1{
+        width:100%;
+    }
+    .mycard-deck .card-2 .card-details{
+        width: 100%;
+    }
+}
+@media screen and (max-width:810px){
+    .sec-6-content-body{
+        width: 100%;
+    }
+    .sec-6-content-body .mycard-deck{
+        flex-direction: column;
+        width: 100%;
+    }
+    .mycard-deck .card-1{
+        width:100%;
+    }
+    .mycard-deck .card-2 .card-details{
+        width: 100%;
+    }
+    .sec-6-btn{
+        font-size: 15px !important;
+    }
+    
+}

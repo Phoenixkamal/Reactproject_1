@@ -1,0 +1,144 @@
+/* Section-5 */
+
+.section-5{
+    height: min-content;
+    width: 100vw;
+    background-color: rgb(15, 15, 15);
+    padding: 120px 50px;
+    color: white;
+    position: relative;
+    z-index: 999;
+}
+.section-5 .sec-5-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sec-5-content .header .heading h1{
+    font-size: 50px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    width: 449px;
+    min-height: 100px;  /*note*/
+    line-height: 1em;
+}
+.sec-5-content .heading{
+    display: flex;
+    justify-content: center;
+}
+.sec-5-content .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+}
+.sec-5-content .header{
+    width: 536px;
+    align-self: center;
+}
+
+.sec-5-content .header .brief-para{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    min-height: 54px;
+}
+.sec-5-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.base{
+    width:930px;
+    height: 187px;
+    display: flex;
+    gap: 39px;
+}
+.box-base{
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    padding: 2px;
+    border-radius: 19px;
+    box-shadow: rgba(173, 75, 0, 0.1) 0px 0px 40px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+.box-overlay{
+    gap: 10px;
+    padding: 25px;
+    border-radius: 17px;
+    background-color: rgb(15, 15, 15);
+}
+
+.body-header .icon .heading{
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+}
+.body-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-body p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.body-header .icon img{
+    height: 100%;
+    object-fit: contain;
+}
+.body-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 218px;
+}
+
+
+
+@media screen and (min-width:810px) and (max-width: 1199px){
+    .sec-5-body .base{
+        display: flex;
+        flex-direction: column;
+        place-content: center flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+    .base{
+        height: min-content;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .sec-5-content .header
+    {
+        width:100% ;
+    }
+    .sec-5-content .header .heading h1{
+        font-size: 50px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+    }
+    .base{
+        height: min-content;
+    }
+    .sec-5-body .base{
+        display: flex;
+        flex-direction: column;
+        place-content: center flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+.body-content{
+    position: relative;
+    z-index: 999;
+}

@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { FaArrowRight } from "react-icons/fa6";
-import LaptopImg from './images/laptop-image.png'
-import DataContext from './context/DataContext';
+import LaptopImg from '../images/laptop-image.png'
+import DataContext from '../context/DataContext';
+import './Section_1.css'
 
 const Section_1 = () => { 
     const {anime,anime_1,anime_2,anime_3,setanime_1,setanime_2,setanime_3} = useContext(DataContext)

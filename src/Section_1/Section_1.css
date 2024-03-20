@@ -1,0 +1,182 @@
+.laptop-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-1-content .content-1{
+    padding: 127px 120px;
+    flex: 1 0 0px;
+}
+.section-1-content .content-2{
+    position: relative;
+}
+.section-1-content{
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-1-content .heading h1{
+    font-family: "DM Sans", sans-serif;
+    font-size: var(--heading-font-size);
+    font-weight:700;
+    line-height: 1em;
+    width: 312px;
+}
+
+.section-1-content .content-1{
+    max-width: 600px;
+}
+.section-1-content .content-2{
+    max-width: 650px;
+}
+.contents .para p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.5em;
+
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.start-now-btn-cus{
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    padding: 12px 20px;
+    font-size: 18px
+
+}
+
+.cus-box-shad:hover{
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 20px 30px 0px;
+}
+
+.cus-home-btn{
+    height: 51px;
+    max-width: 150px;
+    border-radius: 26px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.circle-1{
+    position: absolute;
+    overflow: visible;
+    width: 199px;
+    left: calc(90.1667% - 99.5px);
+    top: calc(25.945% - 99.5px);
+    flex: 0 0 auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 96px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+.circle-2{
+    position: absolute;
+    width: 140px;
+    left: calc(9.16667% - 70px);
+    top: calc(77.1478% - 70px);
+    aspect-ratio: 1 / 1;
+    border-radius: 96px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+
+.circle-3{
+    position: absolute;
+    width: 44px;
+    left: calc(24.3333% - 22px);
+    top: calc(15.9794% - 22px);
+    aspect-ratio: 1 / 1;
+    border-radius: 96px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+.circle-4{
+    position: absolute;
+    width: 117px;
+    left: calc(76.8333% - 58.5px);
+    top: calc(82.1306% - 58.5px);
+    aspect-ratio: 1 / 1;
+    border-radius: 96px;
+    box-shadow: rgba(255, 143, 15, 0.5) 0px 10px 20px 0px;
+    background: linear-gradient(135deg, rgb(255, 0, 0) 0%, rgb(255, 247, 0) 100%);
+}
+
+
+@media screen and (min-width: 810px) and (max-width: 1199px){
+    .content-1 .heading h1{
+        font-size: 40px;
+    } 
+    .section-1-content{
+        overflow-x: hidden;
+    }
+    .circle-1{
+        width: 69px;
+        height: 69px;
+        inset: 75px 41px auto auto;
+    }
+    .circle-2{
+        width: 41px;
+        inset: auto auto 75px 46px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-3{
+        width: 44px;
+        inset: 28px auto auto 103px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-4{
+        width: 56px;
+        inset: calc(81.3776% - 28px) 82px auto auto;
+        aspect-ratio: 1/1;
+    }
+    .section-1-content .content-2{
+        align-self: center;
+        aspect-ratio: 1/1;
+    }
+}
+@media screen and (max-width:810px) {
+    .content-1 .heading h1{
+        font-size: 34px;
+    } 
+    .section-1-content{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .section-1-content .content-1{
+        padding: 40px 120px;
+    }
+    .circle-1{
+        width: 68px;
+        inset: 71px 36px auto auto;
+        aspect-ratio: 1/1;
+    }
+    .circle-2{
+        width: 64px;
+        inset: auto auto 48px 35px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-3{
+        width: 44px;
+        inset: 36px auto auto 106px;
+        aspect-ratio: 1 / 1;
+    }
+    .circle-4{
+        width: 67px;
+        inset: auto 61px 35px auto;
+        aspect-ratio: 1/1;
+    }
+}
+
+@media screen and (max-width:991) {
+    .section-1-content .content-1{
+        max-width:100%;
+    }
+}
