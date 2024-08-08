@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { FaCheck } from "react-icons/fa";
 import DataContext from '../context/DataContext';
 import './Section_6.css'
@@ -17,7 +17,7 @@ const Section_6 = () => {
 
 
   function myScrollfn() {
-      if (window.scrollY > 2390 ) {
+      if (window.scrollY > 2000 ) {
           setTimeout(()=>{
               setFadeAnime_1(sec_6_fadeAnime)
               setScrollAnime_1(section_6_anime)
@@ -29,7 +29,14 @@ const Section_6 = () => {
       } 
       }
  
-  window.addEventListener('scroll', myScrollfn)
+      useEffect(
+        ()=>{
+            window.addEventListener('scroll', myScrollfn)
+            return ()=>{
+                window.removeEventListener('scroll', myScrollfn)
+            }
+        }
+    ,[])
   return (
     <div className='section-6'>
       <div className="sec-6-container">
